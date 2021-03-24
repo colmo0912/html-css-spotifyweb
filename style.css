@@ -23,6 +23,8 @@ main {
     clear: both;
 }
 
+/* MENù SINISTRA */
+
 .main_left,.main_right {
 
     float: left;
@@ -59,7 +61,7 @@ main {
 
 .logo {
 
-    padding:20px 0 20px 10px;
+    padding:20px 0 30px 10px;
 }
 
 .main_left ul ,.create_playlist,.install_app,.install_app_user{
@@ -78,4 +80,49 @@ main {
     flex-grow: 1;
 
 }
+
+/* MENù DESTRA */
+
+
+
+/* UPGRADE */
+
+.main_right_top {
+
+    width: 100%;
+    background-color: rgb(209, 32, 32);  
+    padding:20px 10px 20px 0;
+}
+
+.upgrade_btn {
+
+    margin: auto;
+    float: right;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+/* MENù */
+
+.main_right_ul ul {
+
+    display: flex;
+    padding: 10px 0;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+
+}
+
+.main_right_ul ul li {
+
+    padding: 0 10px;
+}
+
+
+
+
 
