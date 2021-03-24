@@ -1,0 +1,53 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+
+    width: 100%;
+}
+
+.container {
+
+    height: 100vh;
+    background-color: black;
+}
+
+.clearfix {
+
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main_left,.main_right {
+
+    float: left;
+}
+
+.main_left {
+
+    background-color: blanchedalmond;
+    width: 30%;
+
+}
+
+.main_right {
+
+    background-color: rgb(205, 239, 255);
+    width: 70%;
+
+}
+
+.toolbar {
+
+    width: 70%;
+    bottom: 0;
+    position: fixed;
+    background-color: crimson;
+    width: 100%;
+    height: 60px;
+}
