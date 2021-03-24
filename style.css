@@ -33,7 +33,7 @@ main {
 .main_left {
 
     background-color: blanchedalmond;
-    width: 20%;
+    width: 15%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,7 +45,7 @@ main {
 .main_right {
 
     background-color: rgb(205, 239, 255);
-    width: 80%;
+    width: 85%;
 
 }
 
@@ -120,6 +120,34 @@ main {
 .main_right_ul ul li {
 
     padding: 0 10px;
+}
+
+/* SEZIONE ALBUMS */
+
+
+.main_right h3 {
+
+    padding: 5px 10px;
+}
+
+
+.album img{
+
+    /* height: 100px; */
+    width: 200px;
+    padding: 0 10px;
+    
+}
+
+.albums_container {
+
+    background-color: aquamarine;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
 }
 
 
