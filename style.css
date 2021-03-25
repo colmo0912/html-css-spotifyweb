@@ -194,7 +194,6 @@ main {
     position: fixed;
     background-color: crimson;
     width: 100%;
-    height: 60px;
     display: flex;
     
 }
@@ -242,7 +241,7 @@ main {
 
 
 .toolbar_left_1 img {
-    width: 60px;
+    width: 50px;
     height: 100%;
     padding: 5px;
 }
@@ -283,17 +282,43 @@ main {
     padding-left: 20px;
 }
 
-.toolbar_center_bottom {
+.toolbar_center_top{
 
     display: flex;
     justify-content: center;
+    position: relative;
     
 }
 
-.toolbar_center_bottom i {
+
+
+.toolbar_center_top i {
 
     font-size: 20px;
     padding: 10px 5px;
+}
+
+.toolbar_center_bottom {
+
+    text-align: center;
+}
+.toolbar_center_bottom .row_volume {
+
+    width: 350px;
+    position: relative;
+}
+
+.toolbar_center_bottom .row_volume .row_volume_white {
+
+    border: 1px solid rgb(255, 255, 255);
+    width: 80px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    transform: translate(-50%,-50%);
+    
+
 }
 
 
