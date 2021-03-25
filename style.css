@@ -49,6 +49,8 @@ main {
     background-color: rgb(205, 239, 255);
     width: 85%;
     float: right;
+    padding-bottom: 100px;
+
 
 }
 
@@ -72,6 +74,7 @@ main {
 
 .playlist {
     flex-grow: 1;
+    overflow: scroll;
 
 }
 
@@ -124,7 +127,9 @@ main {
     padding: 5px 10px;
 }
 
-.albums_container{
+.albums_container ,.my_albums_container,
+.popular_albums_container
+{
 
     background-color: aquamarine;
     width: 100%;
@@ -132,57 +137,51 @@ main {
     flex-wrap: wrap;
 }
 
-.album {
+.albums_container .album,.my_albums_container .album,
+.popular_albums_container .album{
     
     
     background-color: cadetblue;
     padding: 0 10px;
+    flex-grow: 1;
+    flex-basis: calc(100% / 6);
+    /* max-width: 200px; */
+    
+}
 
+.my_albums_container .album {
+
+    max-width: 250px;
+    background-color: cadetblue;
+    padding: 0 10px;
 }
 
 .album img {
 
-    width: 200px;
+    max-width: 100%;
     background-image: url(img/split.jpeg);
     background-position: center;
     background-size: cover;
 
 }
 
-.album h4, .album h6 {
+.albums_container .album h4, .albums_container .album h6,
+.my_albums_container .album h4, .my_albums_container .album h6,
+.popular_albums_container .album h4,.popular_albums_container .album h6 {
 
     text-align: center;
     
 }
 
-.my_album,.my_album_popular{
-
-    display: flex;
-    background-color: aquamarine;
-    
-}
-
-.my_album_popular {
-
-    padding-bottom: 100px;
-}
-
-.my_album_popular img {
+.popular_albums_container .album img {
 
     border-radius: 50%;
 }
 
+.visible {
 
-
-
-
-
-
-
-
-
-
-
+    opacity: 0;
+}
 
 /* toolbar */
 
@@ -197,7 +196,6 @@ main {
     width: 100%;
     height: 60px;
     
-    
 }
 
 .toolbar_left_first img {
@@ -205,33 +203,6 @@ main {
     width: 60px;
     padding: 10px;
 }
-/* 
-.toolbar_left ,.toolbar_right,.toolbar_center {
-
-    justify-content: space-between;
-    display: flex;
-}
-
-.toolbar_left ,.toolbar_right {
-
-    width: 20%;
-}
-
-.toolbar_center {
-
-    width: 60%;
-    background-color: cyan;
-}
-
-.toolbar_center_first,.toolbar_center_second,.toolbar_center_third {
-
-    width: 20%;
-    justify-content: space-between;
-    
-}
-
-
- */
 
 
 
