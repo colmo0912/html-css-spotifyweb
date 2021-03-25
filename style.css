@@ -283,6 +283,18 @@ main {
     padding-left: 20px;
 }
 
+.toolbar_center_bottom {
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.toolbar_center_bottom i {
+
+    font-size: 20px;
+    padding: 10px 5px;
+}
 
 
 
