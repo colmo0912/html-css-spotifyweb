@@ -14,6 +14,7 @@ main {
 
     height: 100vh;
     background-color: black;
+    
 }
 
 .clearfix {
@@ -39,6 +40,7 @@ main {
     justify-content: space-between;
     align-items: stretch;
     height: calc(100vh - 60px);
+    position: fixed;
 
 }
 
@@ -46,18 +48,10 @@ main {
 
     background-color: rgb(205, 239, 255);
     width: 85%;
+    float: right;
 
 }
 
-.toolbar {
-
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-    background-color: crimson;
-    width: 100%;
-    height: 60px;
-}
 
 .logo {
 
@@ -125,30 +119,127 @@ main {
 /* SEZIONE ALBUMS */
 
 
-.main_right h3 {
+.main_right h3,.my_album_title h5 {
 
     padding: 5px 10px;
 }
 
-
-.album img{
-
-    /* height: 100px; */
-    width: 200px;
-    padding: 0 10px;
-    
-}
-
-.albums_container {
+.albums_container{
 
     background-color: aquamarine;
-    margin: auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+}
+
+.album {
+    
+    
+    background-color: cadetblue;
+    padding: 0 10px;
+
+}
+
+.album img {
+
+    width: 200px;
+    background-image: url(img/split.jpeg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.album h4, .album h6 {
+
+    text-align: center;
+    
+}
+
+.my_album,.my_album_popular{
+
+    display: flex;
+    background-color: aquamarine;
+    
+}
+
+.my_album_popular {
+
+    padding-bottom: 100px;
+}
+
+.my_album_popular img {
+
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* toolbar */
+
+
+
+.toolbar {
+
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    background-color: crimson;
+    width: 100%;
+    height: 60px;
+    
+    
+}
+
+.toolbar_left_first img {
+
+    width: 60px;
+    padding: 10px;
+}
+/* 
+.toolbar_left ,.toolbar_right,.toolbar_center {
+
+    justify-content: space-between;
+    display: flex;
+}
+
+.toolbar_left ,.toolbar_right {
+
+    width: 20%;
+}
+
+.toolbar_center {
+
+    width: 60%;
+    background-color: cyan;
+}
+
+.toolbar_center_first,.toolbar_center_second,.toolbar_center_third {
+
+    width: 20%;
     justify-content: space-between;
     
 }
+
+
+ */
+
+
+
+
+
+
+
+
 
 
 
