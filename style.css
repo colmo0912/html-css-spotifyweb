@@ -24,6 +24,17 @@ main {
     clear: both;
 }
 
+.logo_visible {
+
+    position: absolute;
+    display: none;
+}
+
+.visible {
+
+    display: none;
+}
+
 /* MENù SINISTRA */
 
 .main_left,.main_right {
@@ -42,6 +53,8 @@ main {
     height: calc(100vh - 60px);
     position: fixed;
     color: white;
+    padding-bottom: 20px;
+    padding-left: 10px;
 
 }
 
@@ -61,22 +74,24 @@ main {
     display: inline;
     width: 30px;
     vertical-align: middle;
+    padding: 5px 0;
 }
 
-.main_left ul span {
+.main_left .create_playlist span {
 
     vertical-align: middle;
+    padding: 0 5px;
 }
 
 
 .logo {
 
-    padding:20px 0 30px 10px;
+    padding:20px 0 30px 0px;
 }
 
 .main_left ul ,.create_playlist,.install_app,.install_app_user{
 
-    padding: 0 0 20px 10px;
+    padding: 0 0 20px 0px;
     line-height: 25px;
 }
 
@@ -86,11 +101,48 @@ main {
     vertical-align: middle;
 }
 
+.create_playlist i {
+
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+
+
 .playlist {
     flex-grow: 1;
     overflow: scroll;
 
 }
+
+.install_app {
+
+    padding-left: 5px;
+}
+
+.install_app_user {
+
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(199, 199, 199);
+    vertical-align: middle;
+    
+}
+
+.install_app_user img {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+
+}
+
+
 
 /* MENù DESTRA */
 
@@ -420,7 +472,37 @@ main {
         font-size: 12px;
     }
 
+    .main_left span, .playlist ul li {
 
+        display: none;
+    }
+
+
+
+    .main_left .logo .visible {
+
+        display: inline-block;
+        position: relative;
+        
+    }
+
+
+    .main_left {
+
+        width: 19%;
+
+    }
+
+    .main_right {
+
+        background-color: rgb(205, 239, 255);
+
+    }
+
+    .main_left ul {
+
+        margin-top: -100px;
+    }
 
 
 } 
