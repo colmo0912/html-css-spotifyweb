@@ -33,7 +33,7 @@ main {
 
 .main_left {
 
-    background-color: blanchedalmond;
+    background-color: black;
     width: 15%;
     display: flex;
     flex-direction: column;
@@ -41,6 +41,7 @@ main {
     align-items: stretch;
     height: calc(100vh - 60px);
     position: fixed;
+    color: white;
 
 }
 
@@ -52,6 +53,19 @@ main {
     padding-bottom: 100px;
 
 
+}
+
+.main_left ul img, .main_left .install .install_app img,
+.main_left .install .install_app_user img{
+
+    display: inline;
+    width: 30px;
+    vertical-align: middle;
+}
+
+.main_left ul span {
+
+    vertical-align: middle;
 }
 
 
@@ -159,9 +173,6 @@ main {
 .album img {
 
     max-width: 100%;
-    background-image: url(img/split.jpeg);
-    background-position: center;
-    background-size: cover;
 
 }
 
@@ -182,6 +193,29 @@ main {
 
     opacity: 0;
 }
+
+
+/* hover */
+
+
+.albums_container .album .album_img {
+
+    position: relative;
+}
+
+.albums_container .album .album_img .hover_play{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 100px;
+    
+}
+
+
+
 
 /* toolbar */
 
@@ -241,9 +275,9 @@ main {
 
 
 .toolbar_left_1 img {
-    width: 50px;
+    width: 60px;
     height: 100%;
-    padding: 5px;
+    padding: 10px;
 }
 
 .row_volume {
@@ -319,6 +353,182 @@ main {
     transform: translate(-50%,-50%);
     
 }
+
+
+/* mobile version */
+
+@media all and (max-width:768px) {
+
+    .albums_container .album{
+
+        flex-basis: calc(100% / 2);
+        max-width: 200px;
+        margin: auto;
+    }
+
+    
+
+    .popular_albums_container .album {
+
+        flex-basis: calc(100% / 2);
+        max-width: 200px;
+        margin: auto;
+
+    }
+
+    .my_albums_container .album {
+
+        flex-basis: calc(100% / 2);
+        max-width: 200px;
+        
+    }
+
+    .toolbar_center_bottom .row_volume {
+
+        width: 150px;
+        position: relative;
+    }
+
+    .toolbar_center_bottom .row_volume .row_volume_white {
+
+        left: 20%;
+        transform: translate(-50%,-50%); 
+        width: 60px;
+        
+    }
+
+    .toolbar_right .row_volume {
+
+        width: 30px;
+    }
+
+    .toolbar_right .row_volume_white {
+
+        width: 10px;
+    }
+
+    .toolbar_right .row_volume_white {
+
+        width: 10px;
+        left: 1%;
+        
+    }
+
+    .toolbar_right_icons i {
+
+        padding: 0 2px;
+        font-size: 12px;
+    }
+
+
+
+
+} 
+
+
+
+
+
+/* tablet version */
+
+@media all and (min-width:768px) and (max-width:991px) {
+
+    .albums_container .album{
+
+        flex-basis: calc(100% / 4);
+        max-width: 200px;
+
+    }
+
+    .popular_albums_container .album {
+
+        flex-basis: calc(100% / 4);
+        max-width: 200px;
+
+    }
+
+    .my_albums_container .album {
+
+        flex-basis: calc(100% / 2);
+        max-width: 200px;
+    }
+
+    .toolbar_center_bottom .row_volume {
+
+        width: 250px;
+        position: relative;
+    }
+
+
+    .toolbar_center_bottom .row_volume {
+
+        width: 250px;
+        position: relative;
+    }
+
+    .toolbar_center_bottom .row_volume .row_volume_white {
+
+        left: 15%;
+        transform: translate(-50%,-50%); 
+        width: 80px;
+        
+    }
+
+    .toolbar_right .row_volume {
+
+        width: 80px;
+    }
+
+    .toolbar_right .row_volume_white {
+
+        width: 10px;
+    }
+
+    .toolbar_right .row_volume_white {
+
+        width: 30px;
+        left: 17%;
+        
+    }
+
+    .toolbar_right_icons i {
+
+        padding: 0 2px;
+        font-size: 12px;
+    }
+
+
+
+
+} 
+
+
+/* deskopt version */
+
+@media all and (min-width:992px) {
+
+    .albums_container .album{
+
+        flex-basis: calc(100% / 6);
+        /* max-width: 200px; */
+
+    }
+
+    .popular_albums_container .album {
+
+        flex-basis: calc(100% / 4);
+        max-width: 200px;
+
+    }
+
+    .my_albums_container .album {
+
+        flex-basis: calc(100% / 2);
+        max-width: 200px;
+    }
+
+
+} 
 
 
 
