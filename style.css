@@ -52,7 +52,7 @@ main {
     align-items: stretch;
     height: calc(100vh - 60px);
     position: fixed;
-    color: white;
+    color: #a3a3a3;
     padding-bottom: 20px;
     padding-left: 10px;
 
@@ -60,21 +60,22 @@ main {
 
 .main_right {
 
-    background-color: rgb(205, 239, 255);
+    background-color:#141922;
     width: 85%;
     float: right;
     padding-bottom: 100px;
+    color: #73757a;
 
 
 }
 
-.main_left ul img, .main_left .install .install_app img,
-.main_left .install .install_app_user img{
+.main_left ul img, .main_left .install .install_app img{
 
     display: inline;
     width: 30px;
     vertical-align: middle;
     padding: 5px 0;
+    color: #a3a3a3;
 }
 
 .main_left .create_playlist span {
@@ -109,25 +110,33 @@ main {
 
 
 
-.playlist {
+.main_left .playlist {
     flex-grow: 1;
-    overflow: scroll;
-
+    /* overflow: scroll; */
 }
+
+.install {
+
+    padding: 20px 0;
+}
+
+
+
 
 .install_app {
 
-    padding-left: 5px;
+    padding-left: 2px;
+    color: #a3a3a3;
 }
 
 .install_app_user {
 
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     position: relative;
     display: inline-block;
-    background-color: rgb(199, 199, 199);
+    background-color: #a3a3a3;
     vertical-align: middle;
     
 }
@@ -138,7 +147,9 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    
+    width: 20px;
+    color: #a3a3a3;
+
 
 }
 
@@ -153,7 +164,7 @@ main {
 .main_right_top {
 
     width: 100%;
-    background-color: rgb(209, 32, 32);  
+    background-color: #080b12;  
     padding:20px 10px 20px 0;
 }
 
@@ -168,6 +179,7 @@ main {
     border-radius: 20px;
 }
 
+
 /* MENù */
 
 .main_right_ul ul {
@@ -177,21 +189,24 @@ main {
     flex-direction: row;
     list-style: none;
     justify-content: center;
+    flex-wrap: wrap;
 
 }
 
 .main_right_ul ul li {
 
     padding: 0 10px;
+
 }
 
 /* SEZIONE ALBUMS */
 
 
-.main_right h3,.my_album_title h5 {
+.main_right h3,.my_album_title h5 .main_right h3,.main_right h6{
 
     padding: 5px 10px;
 }
+
 
 .albums_container ,.my_albums_container,
 .popular_albums_container
@@ -201,10 +216,16 @@ main {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    
 }
 
-.albums_container .album,.my_albums_container .album,
-.popular_albums_container .album{
+.subtitle_visible {
+
+    visibility: hidden;
+}
+
+.albums_container .album .album_img,.my_albums_container .album .album_img,
+.popular_albums_container .album .album_img{
     
     
     background-color: cadetblue;
@@ -219,7 +240,7 @@ main {
 
     max-width: 250px;
     background-color: cadetblue;
-    padding: 0 10px;
+    padding: 0px 0px;
 }
 
 .album img {
@@ -227,6 +248,7 @@ main {
     max-width: 100%;
 
 }
+
 
 .albums_container .album h4, .albums_container .album h6,
 .my_albums_container .album h4, .my_albums_container .album h6,
@@ -250,7 +272,7 @@ main {
 /* hover */
 
 
-.albums_container .album .album_img {
+/* .albums_container .album .album_img {
 
     position: relative;
 }
@@ -264,7 +286,7 @@ main {
     color: white;
     font-size: 100px;
     
-}
+} */
 
 
 
@@ -278,16 +300,16 @@ main {
     width: 100%;
     bottom: 0;
     position: fixed;
-    background-color: crimson;
+    background-color:#282828;
     width: 100%;
     display: flex;
+    color: white;
     
 }
 
 .toolbar_left,.toolbar_right {
 
     justify-content: space-between;
-    border: 1px solid white;
     width: 25%;
     display: flex;
     position: relative;
@@ -296,21 +318,19 @@ main {
 .toolbar_center {
 
     justify-content: space-between;
-    border: 1px solid white;
     width: 50%;
+    padding: 0 5px;
 }
 
 .toolbar_left_1 {
 
     justify-content: space-between;
-    border: 1px solid white;
     position: relative;
 }
 
 .toolbar_left_2,.toolbar_left_3 {
 
     width: calc(100% / 2 - 40px);
-    border: 1px solid white;
     position: relative;
 }
 
@@ -339,6 +359,7 @@ main {
     display: inline-block;
     vertical-align: middle;
     position: relative;
+    
 }
 
 .row_volume_white {
@@ -387,11 +408,13 @@ main {
 .toolbar_center_bottom {
 
     text-align: center;
+    
 }
 .toolbar_center_bottom .row_volume {
 
     width: 350px;
     position: relative;
+    margin: 0 5px;
 }
 
 .toolbar_center_bottom .row_volume .row_volume_white {
@@ -432,6 +455,7 @@ main {
 
         flex-basis: calc(100% / 2);
         max-width: 200px;
+        margin: auto;
         
     }
 
@@ -472,7 +496,7 @@ main {
         font-size: 12px;
     }
 
-    .main_left span, .playlist ul li {
+    .main_left span, .playlist ul li,.create_playlist{
 
         display: none;
     }
@@ -490,12 +514,15 @@ main {
     .main_left {
 
         width: 19%;
+        
 
     }
 
     .main_right {
 
         background-color: rgb(205, 239, 255);
+        width: 81%;
+
 
     }
 
