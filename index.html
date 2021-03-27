@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container font">
 
         <main class="clearfix">
 
@@ -19,31 +19,39 @@
 
                 <div class="logo">
                     <img class="main_logo" src="img/logo.svg" alt="">
-                    <img class="visible logo_visible" src="img/logo-small.svg" alt="">
+                    <!-- <img class="visible logo_visible" src="img/favicon.ico" alt=""> -->
+                    <i class="fab fa-spotify logo_visible"></i>
                     
                     
                 </div>
                 
                 <ul>
-                    <li><img src="img/home.svg" alt=""><span> Home</span></li>
-                    <li><img src="img/search.svg" alt=""><span> Cerca</span></li>
-                    <li><img src="img/libreria.svg" alt=""><span> La mia libreria</span></li>
+                    
+                    <!-- <li><span class="home_hr" >&#x007C;</span><img class="home" src="img/home.svg" alt=""><span> Home</span></li> -->
+                    <li>
+                        <div class="home_hr">
+                        <img class="home" src="img/home.svg" alt=""><span class="white_text"> Home</span>
+                        </div>
+                        
+                    </li>
+                    <li><img src="img/search.svg" alt=""><span class="hover_white_text"> Cerca</span></li>
+                    <li><img src="img/libreria.svg" alt=""><span class="hover_white_text"> La mia libreria</span></li>
                 </ul>
 
                 <div class="create_playlist">
-                    <h4>Playlist</h4>
-                    <i class="fas fa-plus-square"></i> <span>  Crea Playlist</span>
+                    <h4 class="white_text">PLAYLIST</h4>
+                    <i class="fas fa-plus-square hover_white_text"></i> <span class="hover_white_text">  Crea Playlist</span>
                 </div>
                 <div class="playlist">
 
                     <ul>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
+                        <li class="hover_white_text">Nome Playlist</li>
+                        <li class="hover_white_text">Nome Playlist</li>
+                        <li class="hover_white_text">Nome Playlist</li>
+                        <li class="hover_white_text">Nome Playlist</li>
+                        <li class="hover_white_text">Nome Playlist</li>
+                        <li class="hover_white_text">Nome Playlist</li>
+                        <li class="hover_white_text">Nome Playlist</li>
                         
                         
 
@@ -55,13 +63,14 @@
 
                 <div class="install">
                     <div class="install_app">
-                        <img src="img/download.svg" alt=""><span> Install App</span>
+                        <img src="img/download.svg" alt=""><span class="hover_white_text"> Install App</span>
                     </div>
+                    <hr>
                     <div class="install_app_user">
                         <img src="img/profile.svg" alt="">
 
                     </div>
-                    <span> John Doe</span>
+                    <span class="white_text"> John Doe</span>
                 </div>
 
             </div>
@@ -72,17 +81,19 @@
 
                 <div class="main_right_ul">
                     <ul>
-                        <li><h5>IN EVIDENZA</h5></li>
-                        <li><h5>PODCAST</h5></li>
-                        <li><h5>CLASSIFICHE</h5></li>
-                        <li><h5>GENERI E MOOD</h5></li>
-                        <li><h5>NUOVE USCITE</h5></li>
-                        <li><h5>SCOPRI</h5></li>
+                        <li><h5 class="hover_white_text">IN EVIDENZA</h5>
+                            <hr>
+                        </li>
+                        <li><h5 class="hover_white_text">PODCAST</h5></li>
+                        <li><h5 class="hover_white_text">CLASSIFICHE</h5></li>
+                        <li><h5 class="hover_white_text">GENERI E MOOD</h5></li>
+                        <li><h5 class="hover_white_text">NUOVE USCITE</h5></li>
+                        <li><h5 class="hover_white_text">SCOPRI</h5></li>
                     </ul>
                 </div>
 
                 
-                    <h3>Recently played</h3>
+                    <h3 class="white_text">Recently played</h3>
 
                     <div class="albums_container">
                         
@@ -94,10 +105,10 @@
                                 </div> -->
                             </div>
                             <div class="subtitle">
-                                <h4>Heavy Metal</h4>
+                                <h4 class="white_text">Heavy Metal</h4>
                                 <h6>Subtitle</h6>
                                 <div class="subtitle_visible">
-                                <h4>Heavy Metal</h4>
+                                <h4 class="white_text">Heavy Metal</h4>
                                 <h4>Heavy Metal</h4>
                                 
                                 </div>
@@ -108,8 +119,8 @@
                             <div class="album_img">
                                 <img src="img/stranger.jpeg" alt="">
                             </div> 
-                            <div class="subtitle"> 
-                                <h4>Stranger Things, Vol. 1 (a Netlix Original Series Soundrack)</h4>
+                            <div class="subtitlet"> 
+                                <h4 class="white_text">Stranger Things, Vol. 1 (a Netlix Original Series Soundrack)</h4>
                                 <h6>Kyle Dixon & Michael Stein</h6>
                             </div>
                             
@@ -119,7 +130,7 @@
                                 <img src="img/aquietplace.jpeg" alt="">
                             </div>
                             <div class="subtitle"> 
-                                <h4>A quiet place</h4>
+                                <h4 class="white_text">A quiet place</h4>
                                 <h6>Subtitle</h6>
                             </div> 
                         </div>
@@ -128,7 +139,7 @@
                                 <img src="img/split.jpeg" alt="">
                         </div> 
                             <div class="subtitle"> 
-                                <h4>Split</h4>
+                                <h4 class="white_text">Split</h4>
                                 <h6>Subtitle</h6>
                             </div>
                         </div>
@@ -137,7 +148,7 @@
                                 <img src="img/cure.jpeg" alt="">
                             </div>
                             <div class="subtitle"> 
-                                <h4>A cure for wellness</h4>
+                                <h4 class="white_text">A cure for wellness</h4>
                                 <h6>Subtitle</h6>
                             </div>
                         </div>
@@ -146,14 +157,14 @@
                                 <img src="img/sinister.jpeg" alt="">
                             </div>
                             <div class="subtitle"> 
-                                <h4>Sinister</h4>
+                                <h4 class="white_text">Sinister</h4>
                                 <h6>Subtitle</h6>
                             </div>
                         </div>
                         
                     </div> 
 
-                    <h3>Craeto per John Doe</h3>
+                    <h3 class="white_text">Craeto per John Doe</h3>
                     <h6>Più ascolti, più accurati saranno i suggerimenti</h6>
 
 
@@ -164,8 +175,8 @@
                                 <div class="album_img">
                                     <img src="img/radar.jpeg" alt="">
                                 </div>
-                                <div class="subtitle"> 
-                                    <h4>Release Radar</h4>
+                                <div class="subtitle white_text"> 
+                                    <h4 class="white_text">Release Radar</h4>
                                 </div>
                             </div>
                             <div class="album">
@@ -173,13 +184,13 @@
                                     <img src="img/mixdaily.jpeg" alt="">
                                 </div>
                                 <div class="subtitle"> 
-                                    <h4>Daily Mix 1</h4>
+                                    <h4 class="white_text">Daily Mix 1</h4>
                                 </div>
                             </div>
                         
                     </div>
 
-                    <h3>Artisti più popolari</h3>
+                    <h3 class="white_text">Artisti più popolari</h3>
                     <h6>Più ascolti, più accurati saranno i suggerimenti</h6>
 
                     <div class="popular_albums_container">
@@ -190,7 +201,7 @@
                                 <img src="img/youg.jpeg" alt="">
                             </div>
                             <div class="subtitle"> 
-                                <h4>Heavy Metal</h4>
+                                <h4 class="white_text">Heavy Metal</h4>
                                 <h6>Subtitle</h6>
                             </div>
                         </div>  
@@ -199,7 +210,7 @@
                                 <img src="img/einaudi.jpeg" alt="">
                             </div>
                             <div class="subtitle"> 
-                                <h4>Heavy Metal</h4>
+                                <h4 class="white_text">Heavy Metal</h4>
                                 <h6>Subtitle</h6>
                             </div>
                         </div>
@@ -220,8 +231,8 @@
                 </div>
                 <div class="toolbar_left_2">
                     <div class="toolbar_left_2_h6">
-                        <h6>Sinister</h6>
-                        <h6>Brano Home</h6>
+                        <h6 class="hover_white_text">Sinister</h6>
+                        <h6 class="hover_white_text">Brano Home</h6>
                     </div>
 
                     
@@ -229,8 +240,8 @@
                 </div>
                 <div class="toolbar_left_3">
                     <div class="toolbar_left_3_icons">
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-folder"></i>
+                        <i class="far fa-heart hover_white_text"></i>
+                        <i class="far fa-folder hover_white_text"></i>
                     </div>
                     
                 </div>
@@ -241,17 +252,18 @@
             <div class="toolbar_center">
 
                 <div class="toolbar_center_top">
-                    <i class="fas fa-random"></i>
-                    <i class="fas fa-step-backward"></i>
-                    <i class="far fa-play-circle"></i>
-                    <i class="fas fa-step-forward"></i>
-                    <i class="fas fa-redo"></i>
+                    <i class="fas fa-random hover_white_text toolbar_center_top_i"></i>
+                    <i class="fas fa-step-backward hover_white_text toolbar_center_top_i"></i>
+                    <i class="far fa-play-circle hover_white_text toolbar_center_top_i_play toolbar_center_top_i_play_grow"></i>
+                    <i class="fas fa-step-forward hover_white_text toolbar_center_top_i"></i>
+                    <i class="fas fa-redo hover_white_text toolbar_center_top_i"></i>
                 </div>
                 <div class="toolbar_center_bottom">
 
                     <span>0:25</span>
                     <div class="row_volume">
                         <div class="row_volume_white"></div>
+                        <div class="volume_point_top"></div>
                     </div>
                     <span>4:35</span>
                 
@@ -261,13 +273,19 @@
             </div>
             <div class="toolbar_right">
                 <div class="toolbar_right_icons">
-                    <i class="fas fa-list"></i>
-                    <i class="fas fa-desktop"></i>
-                    <i class="fas fa-volume-up"></i>
+                    <i class="fas fa-list hover_white_text"></i>
+                    <i class="fas fa-desktop hover_white_text"></i>
+                    <i class="fas fa-volume-up hover_white_text"></i>
+                    
                     <div class="row_volume">
-                        <div class="row_volume_white"></div>
+                        
+                        <div class="row_volume_white row_volume_white_green"></div>
+                        <div class="volume_point"></div>
+                        
                     </div>
+                    
                 </div>
+                
             </div>
 
 
