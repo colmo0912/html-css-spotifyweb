@@ -80,8 +80,23 @@ main {
     display: inline;
     width: 30px;
     vertical-align: middle;
-    padding: 5px 0;
     color: #a3a3a3;
+}
+
+.main_left ul li,.create_playlist_span, .install .install_app span{
+
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 0;
+}
+
+.create_playlist_span{
+
+    font-size: 15px;
+}
+
+.main_right h3 {
+font-size: 35px;
 }
 
 .main_left .create_playlist span {
@@ -90,6 +105,12 @@ main {
     padding: 0 5px;
 }
 
+.create_playlist h4 {
+
+    font-size: 14px;
+    padding: 10px 0;
+    font-weight: 600
+}
 
 .logo {
 
@@ -130,12 +151,10 @@ main {
 
     margin-bottom: 25px;
     width: 90%;
-
 } 
 
 .install_app {
 
-    padding-left: 2px;
     color: #a3a3a3;
 }
 
@@ -150,15 +169,14 @@ main {
 
 .install_app_user {
 
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     position: relative;
     display: inline-block;
     background-color: #a3a3a3;
     vertical-align: middle;
-    
-    
+
 }
 
 .install_app_user img {
@@ -169,15 +187,11 @@ main {
     transform: translate(-50%,-50%);
     width: 20px;
     color: #a3a3a3;
-
-
 }
 
 
 
 /* MENù DESTRA */
-
-
 
 /* UPGRADE */
 
@@ -186,24 +200,29 @@ main {
     width: 100%;
     background-color: #080b12;  
     padding:20px 10px 20px 0;
+    
 }
 
 .upgrade_btn {
 
     margin: auto;
     float: right;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     color: white;
     background-color: black;
     border: 1px solid white;
     border-radius: 20px;
+    
+    
+    
 }
 
 .upgrade_btn:hover {
 
-    padding: 15px;
-    font-size: 15px;
-    overflow: visible;
+    padding: 12px;
+    font-size: 18px;
+    overflow:visible;
+    
 }
 
 
@@ -217,14 +236,11 @@ main {
     list-style: none;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 .main_right_ul ul li {
 
-    padding: 0 10px;
-    
-
+    padding: 20px 10px;
 }
 
 .main_right_ul hr {
@@ -247,7 +263,7 @@ main {
 /* SEZIONE ALBUMS */
 
 
-.main_right h3,.my_album_title h5 .main_right h3,.main_right h6{
+.main_right h3,.my_album_title h5 .main_right h3,.main_right h5{
 
     padding: 5px 10px;
 }
@@ -257,11 +273,24 @@ main {
 .popular_albums_container
 {
 
-    background-color: aquamarine;
+    background-color:#141922;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    
+    padding: 20px 0;
+}
+
+.albums_container .subtitle, .my_albums_container .subtitle,
+.popular_albums_container .subtitle{
+
+    padding: 10px 0;
+}
+
+.albums_container .subtitle h4,.albums_container .subtitle h5,
+.my_albums_container .subtitle h4,.my_albums_container .subtitle h5,
+.popular_albums_container .subtitle h4,.popular_albums_container .subtitle h5{
+
+    padding: 5px 0;
 }
 
 .subtitle_visible {
@@ -269,23 +298,19 @@ main {
     visibility: hidden;
 }
 
+
+
 .albums_container .album .album_img,.my_albums_container .album .album_img,
 .popular_albums_container .album .album_img{
-    
-    
-    background-color: cadetblue;
+    background-color:#141922;
     padding: 0 10px;
     flex-grow: 1;
-    flex-basis: calc(100% / 6);
-    /* max-width: 200px; */
-    
+    flex-basis: calc(100% / 6); 
 }
 
 .my_albums_container .album {
 
     max-width: 250px;
-    background-color: cadetblue;
-    padding: 0px 0px;
 }
 
 .album img {
@@ -295,12 +320,11 @@ main {
 }
 
 
-.albums_container .album h4, .albums_container .album h6,
-.my_albums_container .album h4, .my_albums_container .album h6,
-.popular_albums_container .album h4,.popular_albums_container .album h6 {
+.albums_container .album h4, .albums_container .album h5,
+.my_albums_container .album h4, .my_albums_container .album h5,
+.popular_albums_container .album h4,.popular_albums_container .album h5 {
 
     text-align: center;
-    
 }
 
 .popular_albums_container .album img {
@@ -316,29 +340,50 @@ main {
 
 /* hover */
 
+.hover_play {
 
-/* .albums_container .album .album_img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #dcdfd92a;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    width: 90%;
+    height: 100%;
+    color: white;
+    display: none;
+    
+}
+
+.radius_play {
+
+    border-radius: 50%;
+}
+
+.album_img:hover .hover_play{
+
+    display: inline-block;
+    
+}
+
+.album_img {
 
     position: relative;
 }
 
-.albums_container .album .album_img .hover_play{
+
+.hover_play .play_icon {
 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: white;
-    font-size: 100px;
     
-} */
-
-
-
+}
 
 /* toolbar */
-
-
 
 .toolbar {
 
@@ -381,17 +426,13 @@ main {
     position: relative;
 }
 
-
-
 .toolbar_left_2_h6,.toolbar_left_3_icons {
 
     position: absolute;
     top: 50%;
     left: 25%;
     transform: translate(-50%,-50%);
-    
 }
-
 
 .toolbar_left_1 img {
     width: 60px;
@@ -406,7 +447,6 @@ main {
     display: inline-block;
     vertical-align: middle;
     position: relative;
-    
 }
 
 .row_volume_white {
@@ -418,8 +458,6 @@ main {
     top: 50%;
     left: 20%;
     transform: translate(-50%,-50%);
-    
-
 }
 
 .row_volume_white_green:hover {
@@ -427,15 +465,11 @@ main {
     border: 2px solid #adff2e;
 }
 
-
-
 .toolbar_right_icons i {
 
     padding: 0 5px;
     font-size: 12px;
 }
-
-
 
 .toolbar_right {
 
@@ -451,8 +485,6 @@ main {
     
 }
 
-
-
 .toolbar_center_top_i {
 
     font-size: 15px;
@@ -466,17 +498,16 @@ main {
     font-size: 30px;
     padding: 10px 10px 0 10px;
     vertical-align: middle;
-
+    
 }
 
 .toolbar_center_top_i_play_grow:hover{
 
     font-size: 32px;
+    padding: 10px 15px 0 15px;
     
 
 }
-
-
 
 .toolbar_center_bottom {
 
@@ -507,6 +538,12 @@ main {
     border: 2px solid #adff2e;
 }
 
+.toolbar_center .toolbar_center_bottom .number {
+
+    font-size: 10px;
+    font-weight: 500;
+}
+
 .volume_point {
 
     position: absolute;
@@ -531,9 +568,6 @@ main {
     transform: translate(-50%,-50%);
 }
 
-
-
-
 /* classi comuni */
 
 .white_text {
@@ -551,7 +585,10 @@ main {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.f-800 {
 
+    font-weight: 800;
+}
 
 
 /* mobile version */
@@ -636,18 +673,14 @@ main {
 
     .main_left {
 
-        width: 19%;
-        
-
+        width: 10.5%;
+    
     }
 
     .main_right {
 
-        background-color: rgb(205, 239, 255);
-        width: 81%;
+        width: 89.5%;
         margin-left: -50px
-
-
     }
 
     .main_left ul {
@@ -661,7 +694,6 @@ main {
     }
 
 } 
-
 
 
 /* tablet version */
@@ -738,7 +770,17 @@ main {
     }
 
 
+    .main_left {
 
+        width: 19%;
+    
+    }
+
+    .main_right {
+
+        width: 81%;
+        margin-left: -50px
+    }
 
 } 
 
