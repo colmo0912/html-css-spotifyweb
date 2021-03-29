@@ -119,6 +119,11 @@ font-size: 35px;
     line-height: 25px;
 }
 
+.logo img {
+
+    width: 150px;
+}
+
 .logo img , .logo span {
 
     display: inline;
@@ -442,7 +447,6 @@ font-size: 35px;
     top: 41%;
     left: 50%;
     transform: translate(-50%,-50%); 
-    
 }
 
 .toolbar_center_top_i_play_grow:hover{
@@ -609,7 +613,6 @@ font-size: 35px;
         flex-basis: calc(100% / 2);
         max-width: 200px;
         margin: auto;
-        
     }
 
     .toolbar_left_3 .toolbar_left_3_icons i{
@@ -705,6 +708,11 @@ font-size: 35px;
         padding: 2px 0
     }
 
+    .main_right h3,.main_right .f-800 {
+
+        margin-left: 5px;
+    }
+
 } 
 
 
@@ -764,7 +772,6 @@ font-size: 35px;
 
         width: 30px;
         left: 17%;
-        
     }
 
     .toolbar_right_icons i {
@@ -777,7 +784,6 @@ font-size: 35px;
 
         display: none;
     }
-
 
     .main_left {
 
@@ -807,7 +813,6 @@ font-size: 35px;
 
         flex-basis: calc(100% / 4);
         max-width: 200px;
-
     }
 
     .my_albums_container .album {
@@ -823,10 +828,9 @@ font-size: 35px;
 
     .toolbar_left_2_h6,.toolbar_left_3_icons {
 
-        
         left: 18%;
-    
     }
+
     .toolbar_left_3_icons {
 
         left: -30%;
