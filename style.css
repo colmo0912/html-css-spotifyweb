@@ -438,19 +438,27 @@ font-size: 35px;
     font-size: 30px;
     padding: 10px 10px 0 10px;
     vertical-align: middle;
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
     
 }
 
 .toolbar_center_top_i_play_grow:hover{
 
-    font-size: 32px;
+    font-size: 35px;
     padding: 10px 15px 0 15px;
+}
+
+.toolbar_center .toolbar_center_top .left_i {
+
+    padding-right: 40px;
 }
 
 .toolbar_center_bottom {
 
     text-align: center;
-    
 }
 .toolbar_center_bottom .row_volume {
 
@@ -546,6 +554,11 @@ font-size: 35px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.underline:hover {
+
+    text-decoration: underline;
 }
 
 
