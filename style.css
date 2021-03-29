@@ -139,7 +139,7 @@ font-size: 35px;
 .main_left .playlist {
 
     flex-grow: 1;
-    /* overflow: scroll; */
+    overflow: auto;
 }
 
 .install {
