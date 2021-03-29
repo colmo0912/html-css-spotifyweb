@@ -55,6 +55,7 @@ main {
     color: #a3a3a3;
     padding-bottom: 20px;
     padding-left: 10px;
+    overflow: auto;
 }
 
 .main_right {
